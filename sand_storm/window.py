@@ -2,7 +2,6 @@ import sys
 from random import randint
 from typing import Tuple
 
-
 from .world import World
 from .colors import Colors
 import pygame
@@ -26,7 +25,7 @@ class Window:
         self.is_running = True
         self.run()
 
-    def run(self) ->None:
+    def run(self) -> None:
         while self.is_running:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -44,7 +43,7 @@ class Window:
                     int(y // self.size[1]) + randint(-2, 2)
                 )
 
-            self.screen.fill(Colors.BLUE)
+            self.screen.fill(Colors.WHITE)
 
             for it in range(len(self.world.sands) - 1, -1, -1):
                 self.world.check_falling(it)

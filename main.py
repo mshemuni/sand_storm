@@ -3,7 +3,7 @@ from sand_storm import Window, World
 
 def main():
     world = World(
-        (200, 200),
+        (100, 100),
         [],
         friction=6
     )

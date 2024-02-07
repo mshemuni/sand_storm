@@ -2,6 +2,8 @@
 
 This is a simple sand simulator written in Python. It is created solely for educational purposes and is not performance-optimized. The simulator allows users to interact with virtual sand particles and observe their behavior.
 
+![sample.GIF](sample.GIF)
+
 ## Installation
 
 To install the sand simulator, follow these steps:
